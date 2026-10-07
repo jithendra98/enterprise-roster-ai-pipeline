@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mallela Jithendra - Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm 15mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.42;
+      font-size: 10pt;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    header {
+      border-bottom: 2px solid #0284c7;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 20pt;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #0f172a;
+      text-transform: uppercase;
+    }
+    .subtitle {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #0284c7;
+      margin-top: 2px;
+      margin-bottom: 6px;
+    }
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      font-size: 8.8pt;
+      color: #475569;
+    }
+    .contact-bar a {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-bar a:hover {
+      text-decoration: underline;
+    }
+    section {
+      margin-bottom: 11px;
+    }
+    .section-title {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #0f172a;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 3px;
+      margin-bottom: 7px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      row-gap: 4px;
+      font-size: 9.2pt;
+    }
+    .skill-cat {
+      font-weight: 600;
+      color: #1e293b;
+    }
+    .skill-items {
+      color: #334155;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .item-title {
+      font-size: 10pt;
+      font-weight: 600;
+      color: #0f172a;
+    }
+    .item-title a {
+      color: #0284c7;
+      text-decoration: none;
+    }
+    .item-title a:hover {
+      text-decoration: underline;
+    }
+    .item-meta {
+      font-size: 8.8pt;
+      font-weight: 500;
+      color: #64748b;
+    }
+    .item-sub {
+      font-size: 9pt;
+      font-weight: 500;
+      color: #475569;
+      margin-bottom: 3px;
+      font-style: italic;
+    }
+    ul {
+      margin-left: 17px;
+      margin-bottom: 6px;
+    }
+    li {
+      font-size: 9pt;
+      color: #334155;
+      margin-bottom: 2.5px;
+      line-height: 1.38;
+    }
+    li strong {
+      color: #0f172a;
+      font-weight: 600;
+    }
+    .edu-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 9pt;
+    }
+    .edu-table td {
+      padding: 2px 0;
+      vertical-align: top;
+    }
+    .edu-left {
+      font-weight: 600;
+      color: #0f172a;
+    }
+    .edu-mid {
+      color: #475569;
+    }
+    .edu-right {
+      text-align: right;
+      color: #64748b;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+    .print-banner {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      color: #1e40af;
+      padding: 10px 16px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 9.5pt;
+    }
+    .print-btn {
+      background: #0284c7;
+      color: #ffffff;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .print-btn:hover {
+      background: #0369a1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="print-banner no-print">
+      <span>💡 <strong>Resume Ready!</strong> Click to generate your clean 1-page PDF for MoveInSync.</span>
+      <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+
+    <header>
+      <h1>Mallela Jithendra</h1>
+      <div class="subtitle">Forward Deployed Engineer | AI Automation & Enterprise Integrations</div>
+      <div class="contact-bar">
+        <span>📞 +91 9652276818</span>
+        <span>✉ <a href="mailto:mallelajithendra2004@gmail.com">mallelajithendra2004@gmail.com</a></span>
+        <span>📍 Guntur, Andhra Pradesh</span>
+        <span>🔗 <a href="https://linkedin.com/in/mallela-jithendra-935338251" target="_blank">LinkedIn</a></span>
+        <span>💻 <a href="https://github.com/jithendra98" target="_blank">github.com/jithendra98</a></span>
+      </div>
+    </header>
+
+    <!-- TECHNICAL SKILLS -->
+    <section>
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-grid">
+        <div class="skill-cat">Core Languages:</div>
+        <div class="skill-items">Python, JavaScript / TypeScript, SQL, HTML5, CSS3, Bash/Shell</div>
+
+        <div class="skill-cat">AI & Automation:</div>
+        <div class="skill-items">LLM Tool Calling, Prompt Engineering, Agentic Workflows, Slack & MS Teams Webhook Automation</div>
+
+        <div class="skill-cat">Backend & Libraries:</div>
+        <div class="skill-items">FastAPI, REST APIs, Pydantic v2, Pandas, Asyncio, JSON Schema Validation, Pytest/Unittest</div>
+
+        <div class="skill-cat">Tools & Platforms:</div>
+        <div class="skill-items">Git, GitHub, Linux / CLI, VS Code, Cursor AI, Postman, Streamlit, Cloud Fundamentals</div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section>
+      <div class="section-title">Technical Projects</div>
+
+      <!-- Project 1 -->
+      <div style="margin-bottom: 7px;">
+        <div class="item-header">
+          <span class="item-title">
+            Enterprise Roster Ingestion & Shift Reconciliation Pipeline
+            (<a href="https://github.com/jithendra98/enterprise-roster-ai-pipeline" target="_blank">GitHub</a>)
+          </span>
+          <span class="item-meta">Oct 2026</span>
+        </div>
+        <div class="item-sub">Tech: Python, Pydantic v2, Dynamic ETL, Transit Compliance Rules, Slack/Teams Webhooks</div>
+        <ul>
+          <li>Architected an automated ingestion engine standardizing fragmented enterprise HRMS shift rosters (Workday, SAP SuccessFactors, Excel) into canonical schemas with <strong>99%+ header mapping accuracy</strong>.</li>
+          <li>Built a transit compliance evaluator enforcing statutory night-shift safety mandates (<strong>POL-NIGHT-ESCORT</strong>) to auto-flag female employee trips requiring security escorts between 8:00 PM and 6:00 AM.</li>
+          <li>Engineered automated Slack/Teams webhook alert dispatchers with Block Kit formatting, slashing transport desk manual data validation and reconciliation time from <strong>40 minutes to under 20 seconds</strong>.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2 -->
+      <div style="margin-bottom: 7px;">
+        <div class="item-header">
+          <span class="item-title">Real-Time Fleet Telemetry & Safety Anomaly Escalation Agent</span>
+          <span class="item-meta">Aug 2026</span>
+        </div>
+        <div class="item-sub">Tech: Python, FastAPI, Streamlit, Twilio API, Event Queues, REST APIs</div>
+        <ul>
+          <li>Designed an event-driven monitoring agent that ingests simulated cab GPS telemetry and detects safety SLA breaches (unapproved route deviations, panic SOS triggers, unverified stops).</li>
+          <li>Implemented an autonomous triage engine that classifies incident severity into P1/P2/P3 tiers and dispatches real-time priority SMS alerts and contextual incident logs to transport control desks.</li>
+          <li>Built an interactive operations console in Streamlit for fleet managers, cutting incident response turnaround by <strong>75%</strong>.</li>
+        </ul>
+      </div>
+
+      <!-- Project 3 -->
+      <div>
+        <div class="item-header">
+          <span class="item-title">Dynamic Property & Operations Management Portal</span>
+          <span class="item-meta">Aug 2023 - Nov 2023</span>
+        </div>
+        <div class="item-sub">Tech: JavaScript, HTML5, Responsive CSS, DOM APIs, LocalStorage</div>
+        <ul>
+          <li>Developed an interactive, responsive web portal facilitating property listings, filtering, and transaction inquiries with cross-browser accessibility and zero external styling libraries.</li>
+          <li>Implemented modular state management and input validation for inquiry workflows, improving client engagement and user retention.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- WORK EXPERIENCE / LEADERSHIP -->
+    <section>
+      <div class="section-title">Leadership & Operational Experience</div>
+      <div class="item-header">
+        <span class="item-title">Event Operations & Management Coordinator</span>
+        <span class="item-meta">Lovely Professional University | Oct 2023</span>
+      </div>
+      <ul>
+        <li>Coordinated cross-functional teams to manage logistics, schedule tracking, and crowd flow for university-level events exceeding 1,500+ attendees.</li>
+        <li>Honed rapid root-cause troubleshooting, active stakeholder communication, and high-pressure problem resolution in dynamic environments.</li>
+      </ul>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+      <div class="section-title">Education</div>
+      <table class="edu-table">
+        <tr>
+          <td class="edu-left">B.Tech in Computer Science and Engineering</td>
+          <td class="edu-mid">Lovely Professional University, Phagwara, Punjab</td>
+          <td class="edu-right">2022 – 2026</td>
+        </tr>
+        <tr>
+          <td class="edu-left">Intermediate (Class XII) - MPC</td>
+          <td class="edu-mid">Narayana Junior College, Guntur, Andhra Pradesh (CGPA: 7.6)</td>
+          <td class="edu-right">2020 – 2022</td>
+        </tr>
+        <tr>
+          <td class="edu-left">Secondary School Certificate (Class X)</td>
+          <td class="edu-mid">AMG High School, Guntur, Andhra Pradesh (CGPA: 8.8)</td>
+          <td class="edu-right">2019 – 2020</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- CERTIFICATIONS & HONORS -->
+    <section>
+      <div class="section-title">Certifications & Honors</div>
+      <div class="skills-grid" style="grid-template-columns: auto 1fr;">
+        <div class="skill-cat">• Indian Science Inspire:</div>
+        <div class="skill-items"><strong>1st Place State-Level Winner</strong> for innovative scientific problem solving.</div>
+        <div class="skill-cat">• Product & Brand Management:</div>
+        <div class="skill-items">Certified in stakeholder alignment and product strategy (Udemy).</div>
+        <div class="skill-cat">• Responsive Web Design:</div>
+        <div class="skill-items">FreeCodeCamp Certified Developer.</div>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
