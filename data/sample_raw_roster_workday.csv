@@ -1,0 +1,8 @@
+staff_id,staff_name,sex,shift_start,from_location,to_location,mobile,department
+E-10021,Aarav Sharma,Male,9:00 AM,Indiranagar 100ft Rd,EGL Business Park,9876543210,Engineering
+E-10045,Pooja Verma,Female,22:30,Koramangala 4th Block,EGL Business Park,9898989898,Operations
+E-10089,Ananya Iyer,Female,9:00 PM,HSR Layout Sector 2,EGL Business Park,9123456780,Product
+E-10112,Rohan Gupta,Male,21:00,Whitefield Hope Farm,EGL Business Park,,Sales
+E-10143,Kavita Rao,Female,04:30 AM,Marathahalli Bridge,EGL Business Park,9988776655,Finance
+E-10199,Vikram Patel,Male,14:00,BTM 2nd Stage,EGL Business Park,9765432109,Engineering
+E-10250,Sneha Reddy,Female,23:00,Bellandur Green Glen,EGL Business Park,9876501234,Support
