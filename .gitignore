@@ -9,3 +9,6 @@ venv/
 dist/
 build/
 *.egg-info/
+*.docx
+*.pdf
+generate_resume_docx.py
