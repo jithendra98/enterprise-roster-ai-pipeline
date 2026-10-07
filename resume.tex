@@ -1,0 +1,180 @@
+%-------------------------
+% Resume in LaTeX (Overleaf Ready)
+% Author : Mallela Jithendra
+% Target : MoveInSync - Forward Deployed Engineer
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.8pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% Font options
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins (Strict 1-Page Layout)
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.65in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2.2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Mallela Jithendra} \\ \vspace{2pt}
+    \textbf{\large \color{MidnightBlue} Forward Deployed Engineer $|$ AI Automation \& Enterprise Integrations} \\ \vspace{3pt}
+    \small +91 9652276818 $|$ 
+    \href{mailto:mallelajithendra2004@gmail.com}{\underline{mallelajithendra2004@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/mallela-jithendra-935338251}{\underline{linkedin.com/in/mallela-jithendra}} $|$ 
+    \href{https://github.com/jithendra98}{\underline{github.com/jithendra98}} $|$ 
+    Guntur, AP
+\end{center}
+
+\vspace{-10pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Core Languages}{: Python, JavaScript / TypeScript, SQL, HTML5, CSS3, Bash/Shell} \\ \vspace{1pt}
+     \textbf{AI \& Automation}{: LLM Tool Calling, Prompt Engineering, Agentic Workflows, Slack \& Teams Webhook Automation} \\ \vspace{1pt}
+     \textbf{Backend \& Data}{: FastAPI, REST APIs, Pydantic v2, Pandas, Asyncio, JSON Schema Validation, Pytest/Unittest} \\ \vspace{1pt}
+     \textbf{Developer Tools}{: Git, GitHub, Linux / CLI, VS Code, Cursor AI, Postman, Streamlit, Cloud Fundamentals}
+    }}
+ \end{itemize}
+
+\vspace{-12pt}
+
+%-----------TECHNICAL PROJECTS-----------
+\section{Technical Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Enterprise Roster Ingestion \& Shift Reconciliation Pipeline} $|$ \emph{Python, Pydantic, Webhooks, ETL}}{Oct 2026}
+          \resumeItemListStart
+            \resumeItem{Engineered an automated ingestion pipeline mapping fragmented enterprise HRMS shift rosters (Workday, SAP SuccessFactors, Excel) into canonical schemas with \textbf{99\%+ field mapping accuracy} using dynamic regex synonyms.}
+            \resumeItem{Implemented a transit safety rule engine enforcing statutory night-shift mandates (\textbf{POL-NIGHT-ESCORT}) to auto-flag female employee trips requiring security escorts between 8:00 PM and 6:00 AM.}
+            \resumeItem{Integrated automated Slack/Teams webhook incident dispatches with Block Kit alert cards, cutting manual transport desk validation and reconciliation turnaround from \textbf{40 minutes to under 20 seconds}.}
+            \resumeItem{\textbf{GitHub Repository:} \href{https://github.com/jithendra98/enterprise-roster-ai-pipeline}{\underline{github.com/jithendra98/enterprise-roster-ai-pipeline}}}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Real-Time Fleet Telemetry \& Safety Anomaly Escalation Agent} $|$ \emph{Python, FastAPI, Streamlit, Twilio API}}{Aug 2026}
+          \resumeItemListStart
+            \resumeItem{Designed an event-driven monitoring agent that ingests simulated cab GPS telemetry and identifies transit SLA breaches, unapproved route deviations, panic SOS triggers, and unverified stops.}
+            \resumeItem{Developed an autonomous triage engine that classifies incident severity into P1/P2/P3 tiers and dispatches real-time priority SMS alerts and contextual incident logs to transport control desks.}
+            \resumeItem{Built an interactive operations console in Streamlit for fleet managers, cutting incident triage response time by \textbf{75\%}.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Dynamic Property \& Operations Management Portal} $|$ \emph{JavaScript, HTML5, Responsive CSS, DOM APIs}}{Aug 2023 -- Nov 2023}
+          \resumeItemListStart
+            \resumeItem{Created an interactive web portal for property listings, dynamic filtering, and transaction inquiries with cross-browser accessibility and zero external UI dependencies.}
+            \resumeItem{Structured modular client-side state handling and form validation for inquiry workflows, optimizing user engagement.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\vspace{-12pt}
+
+%-----------LEADERSHIP & EXPERIENCE-----------
+\section{Leadership \& Operational Experience}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+        {Event Operations \& Management Coordinator}{Oct 2023}
+        {Lovely Professional University}{Phagwara, Punjab}
+        \resumeItemListStart
+          \resumeItem{Coordinated cross-functional student teams managing logistics, scheduling, and crowd operations for university events with 1,500+ attendees.}
+          \resumeItem{Demonstrated rapid root-cause troubleshooting, stakeholder communication, and high-pressure problem resolution in dynamic environments.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\vspace{-12pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lovely Professional University}{Phagwara, Punjab}
+      {Bachelor of Technology in Computer Science and Engineering}{2022 -- 2026}
+    \resumeSubheading
+      {Narayana Junior College}{Guntur, Andhra Pradesh}
+      {Intermediate (Class XII) - MPC (CGPA: 7.6)}{2020 -- 2022}
+    \resumeSubheading
+      {AMG High School}{Guntur, Andhra Pradesh}
+      {Secondary School Certificate (Class X) (CGPA: 8.8)}{2019 -- 2020}
+  \resumeSubHeadingListEnd
+
+\vspace{-12pt}
+
+%-----------CERTIFICATIONS & HONORS-----------
+\section{Certifications \& Honors}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Indian Science Inspire}{: 1st Place State-Level Winner for innovative scientific problem solving.} \\ \vspace{1pt}
+     \textbf{Product \& Brand Management}{: Certified in stakeholder alignment and product strategy (Udemy).} \\ \vspace{1pt}
+     \textbf{Responsive Web Design}{: FreeCodeCamp Certified Developer.}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
